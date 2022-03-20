@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{/css/mainStyle.css}">
+    <link rel="stylesheet" th:href="@{/css/product.css}">
+    <link rel="stylesheet" th:href="@{/css/sach_slaider.css}">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container position_relative">
+            <div class="header_left"><a class="noA" href="/">GitarGir</a></div>
+            <div class="header_right">
+                <nav class="header_nav">
+                    <div class="display_inline-block marg_r_30">
+                        <a class="header_nav_a" href="/catalog">Каталог</a>
+                    </div>
+                    <div class="display_inline-block marg_r_30">
+                        <a class="header_nav_a" href="">Заказы</a>
+                    </div>
+                    <div class="display_inline-block marg_r_30">
+                        <a class="header_nav_a" href="">Карзина</a>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="product_container">
+        <div class="container">
+            <div class="product_container_main">
+                <div class="product_i_main">
+                    <div class="disp_flex_slider">
+                        <div class="box_sahc">
+                            <input type="range" min="12" max="2175" value="12" class="slider" id="lower">
+                            <input type="range" min="12" max="2175" value="2175" class="slider" id="higher">
+
+                            <input type="text" id="input_text1" class="mt20">
+                            <input type="text" id="input_text2" class="mt20">
+                        </div>
+                        <div class="box_sahc_y">
+                            <div class="dox_flex marg_bott">
+                                <input type="checkbox">
+                                <span>внутриканальные</span>
+                            </div>
+                            <div class="dox_flex marg_bott">
+                                <input type="checkbox">
+                                <span> динамические закрытые </span>
+                            </div>
+                            <div class="dox_flex marg_bott">
+                                <input type="checkbox">
+                                <span> закрытые </span>
+                            </div>
+                            <div class="dox_flex marg_bott">
+                                <input type="checkbox">
+                                <span> открытые </span>
+                            </div>
+                            <div class="dox_flex marg_bott">
+                                <input type="checkbox">
+                                <span> полуоткрытые </span>
+                            </div>
+                        </div>
+                        <div class="box_sahc_y">
+                            <div class="dox_flex marg_bott">
+                                <input type="checkbox">
+                                <span>Проводные</span>
+                            </div>
+                            <div class="dox_flex marg_bott">
+                                <input type="checkbox">
+                                <span>Без проводные</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn_sach">поиск</button>
+                </div>
+
+                <div class="product_i">
+                    <div class="product_info">
+                        <div class="product_name">
+                            наушники
+                        </div>
+
+                        <!-- 
+                        <div class="btn_product_characteristic">
+
+                        </div>
+                         -->
+
+                    </div>
+                    <div class="product_img">
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="product_next">
+                    <div class="not_pointer">...</div>
+                    <div class="nam_next aktiv">1</div>
+                    <div class="nam_next">2</div>
+                    <div class="nam_next">3</div>
+                    <div class="nam_next">4</div>
+                    <div class="nam_next">5</div>
+                    <div class="nam_next">6</div>
+                    <div class="nam_next">7</div>
+                    <div class="nam_next">8</div>
+                    <div class="nam_next">9</div>
+                    <div class="not_pointer">...</div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer_kontakt">
+        <div class="container position_relative">
+            <div class="kontakt_text">Котакты</div>
+        </div>
+    </footer>
+
+
+
+    <script type="text/javascript" th:src="@{/js/sach_slaider.js}"></script>
+    
+</body>
+
+</html>
