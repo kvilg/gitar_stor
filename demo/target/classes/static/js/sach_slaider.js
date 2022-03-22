@@ -32,12 +32,15 @@ btn_sach.addEventListener('click', () => {
         surname: "Цой"
     });
 
-    xhr.open("POST", '/submit', true)
+    xhr.open("GET", '/get', true)
     xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8');
 
-    // Отсылаем объект в формате JSON и с Content-Type application/json
-    // Сервер должен уметь такой Content-Type принимать и раскодировать
-    xhr.send(json);
+  
+    document.write(xhr.send(json));
 
 
 });
+
+
+
+
