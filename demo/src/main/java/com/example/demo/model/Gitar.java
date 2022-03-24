@@ -12,7 +12,7 @@ public class Gitar {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private Integer price;
+    private Integer price,price2;
 
     private String name, type, sensors;
 
@@ -21,11 +21,13 @@ public class Gitar {
 
     }
 
-    public Gitar(String name, Integer price, String type, String sensors) {
+    public Gitar(String name, Integer price, Integer price2, String type, String sensors) {
         this.name = name;
         this.price = price;
+        this.price2 = price2;
         this.type = type;
         this.sensors = sensors;
+
     }
 
     public Long getId() {
@@ -46,6 +48,14 @@ public class Gitar {
 
     public String getSensors() {
         return sensors;
+    }
+
+    public Integer getPrice2() {
+        return price2;
+    }
+
+    public void setPrice2(Integer price2) {
+        this.price2 = price2;
     }
 
     public void setId(Long id) {

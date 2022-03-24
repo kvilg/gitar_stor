@@ -12,15 +12,24 @@ public class Microphones {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private Integer price;
+    private Integer price,price2;
 
     private String name, type, orientation;
 
-    public Microphones(Integer price, String name, String type, String orientation) {
+    public Microphones(Integer price, Integer price2, String name, String type, String orientation) {
         this.price = price;
+        this.price2 = price2;
         this.name = name;
         this.type = type;
         this.orientation = orientation;
+    }
+
+    public Integer getPrice2() {
+        return price2;
+    }
+
+    public void setPrice2(Integer price2) {
+        this.price2 = price2;
     }
 
     public Long getId() {

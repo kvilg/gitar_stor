@@ -12,7 +12,7 @@ public class Keyboards {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private Integer price;
+    private Integer price,price2;
 
     private String name, type;
 
@@ -20,12 +20,21 @@ public class Keyboards {
     private Boolean midi;
 
 
-    public Keyboards(Integer price, String name, String type, Integer octaves, Boolean midi) {
+    public Keyboards(Integer price, Integer price2, String name, String type, Integer octaves, Boolean midi) {
         this.price = price;
+        this.price2 = price2;
         this.name = name;
         this.type = type;
         this.octaves = octaves;
         this.midi = midi;
+    }
+
+    public Integer getPrice2() {
+        return price2;
+    }
+
+    public void setPrice2(Integer price2) {
+        this.price2 = price2;
     }
 
     public Long getId() {

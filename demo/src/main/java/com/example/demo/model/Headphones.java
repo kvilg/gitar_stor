@@ -13,17 +13,26 @@ public class Headphones {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private Integer price;
+    private Integer price,price2;
 
     private String name, type;
 
     private Boolean wire;
 
-    public Headphones(Integer price, String name, String type, Boolean wire) {
+    public Headphones(Integer price, Integer price2, String name, String type, Boolean wire) {
         this.price = price;
+        this.price2 = price2;
         this.name = name;
         this.type = type;
         this.wire = wire;
+    }
+
+    public Integer getPrice2() {
+        return price2;
+    }
+
+    public void setPrice2(Integer price2) {
+        this.price2 = price2;
     }
 
     public Long getId() {

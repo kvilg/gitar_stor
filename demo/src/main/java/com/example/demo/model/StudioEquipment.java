@@ -12,12 +12,13 @@ public class StudioEquipment {
     private Long id;
     private String name;
 
-    private Integer price;
+    private Integer price,price2;
 
     private Integer outLine , inLine;
 
-    public StudioEquipment(String name,Integer price, Integer outLine, Integer inLine) {
+    public StudioEquipment(String name,Integer price, Integer price2, Integer outLine, Integer inLine) {
         this.price = price;
+        this.price2 = price2;
         this.outLine = outLine;
         this.inLine = inLine;
         this.name = name;
@@ -25,6 +26,14 @@ public class StudioEquipment {
 
     public String getName() {
         return name;
+    }
+
+    public Integer getPrice2() {
+        return price2;
+    }
+
+    public void setPrice2(Integer price2) {
+        this.price2 = price2;
     }
 
     public void setName(String name) {

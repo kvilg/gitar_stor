@@ -9,7 +9,7 @@ public interface GitarRepo extends CrudRepository<Gitar, Long> {
 
     List<Gitar> findByName(String name);
 
-    List<Gitar> findByPriceLessThanAndPriceGreaterThan(Integer price, Integer price2);
+    List<Gitar> findByPriceGreaterThanAndPrice2LessThan(Integer price, Integer price2);
 
     List<Gitar> findByPriceLessThan(Integer price);
 
